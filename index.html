@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+
+    <!-- Navbar -->
+    <!-- End Navbar -->
+    <!-- banner -->
+        <div class="banner">
+            <div class="navbar">   
+                <div class="menu">
+                    <ul> 
+                        <li><a href="#map_a">Map</a></li>
+                        <li><a href="#chef_a">Chef</a></li>
+                        <li><a href="#intro">Intro</a></li>
+                        <li><img class='logo' src="assets\logo_w@svg.svg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bannerword">
+                <p class='title'>咬一口就無法忘懷的漢堡</p>
+                <p class="subtile">七夕絕對無法錯過的好滋味<br>六角大漢堡</p>
+            </div>
+        </div>    
+    <!-- End banner -->
+    <!-- features -->  
+    <div class="clearfix"></div>
+    <p id='intro'></p>  
+    <div class="features">
+    <p> 客人總是在詢問 <br> 這麼好吃的秘訣是什麼</p>
+        <ul class="featurelist">
+            <li>
+                <img src="assets\feature_1.png" alt="台灣本土蔬菜">
+                <h2>台灣本土蔬菜</h2>
+                <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+            </li>
+            <li>
+                <img src="assets\feature_2.png" alt="專業米其林廚師">
+                <h2>專業米其林廚師</title>
+                <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+            </li>
+            <li>
+                <img src="assets\feature_3.png" alt="對於專業不能退讓">
+                <h2>對於專業不能退讓"</title>
+                <p>In hac habitasse platea dictumst. Vivamus adipiscing fermentum quam volutpat aliquam. Integer et elit eget elit facilisis tristique. Nam vel iaculis mauris.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+    <!-- End features -->
+    <!-- chef -->
+    <div class="chef">
+    <p id='chef_a'></p>
+        <ul>
+        <li>
+            <img src="assets\main_chef_brown.png" alt="chef">
+        </li>
+        <li class='chef_info'>
+            <h2>Today's chef: Plun in Shock</h2>
+            <p>Mauris non tempor quam, et lacinia sapien. Mauris accumsan eros eget libero posuere vulputate. Etiam elit elit, elementum sed varius at, adipiscing vitae est. Sed nec felis pellentesque, lacinia dui sed, ultricies sapien. Pellentesque orci lectus, consectetur vel posuere posuere, rutrum eu ipsum. Aliquam eget odio sed ligula iaculis consequat at eget orci. Mauris molestie sit amet metus mattis varius. Donec sit amet ligula eget nisi sodales egestas. Aliquam interdum dolor aliquet dolor sollicitudin fermentum. Donec congue lorem a molestie bibendum.</p>
+        </li>
+        </ul>
+    </div>
+    <div class="clearfix"></div>
+    <!-- End chef -->
+    <!-- testimonial -->
+    <div class="testimonial">
+        <h1>How dose our clients say</h1>
+        <ul>
+            <li>
+                <div class="customerpic">
+                    <img src="assets\avatar_1.png" alt="">
+                </div>
+                <div class="customeroword">
+                    <p class="customer">高雄一口吃</p>
+                    <p class="feedback">
+                        自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                    </p>
+                    <p class="jobtitle">產品經理</p>
+                </div>
+            </li>
+            <li>
+                <div class="customerpic">
+                    <img src="assets\avatar_2.png" alt="">
+                </div>
+                <div class="customeroword">
+                    <p class="customer">廟口小霸王</p>
+                    <p class="feedback">
+                        自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                    </p>
+                    <p class="jobtitle">金身道士</p>
+                </div>
+            </li>
+            <li>
+                <div class="customerpic">
+                    <img src="assets\avatar_3.png" alt="">
+                </div>
+                <div class="customeroword">
+                    <p class="customer">春天也來了</p>
+                    <p class="feedback">
+                        自從吃了這家餐廳以後，我口水連續流了一個多月都沒停，下次不要再被我遇到，不然我一定連他們桌子都啃下去。
+                    </p>
+                    <p class="jobtitle">美麗萬分</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="clearfix"></div>
+    <!-- End testimonial -->
+    <!-- booking -->
+    
+    <div class="booking">
+    <p id='map_a'></p>
+    <h1>Make a reservation to prevent long wait</h1>   
+    <ul class="bookinginfo">
+        <li class='map'>
+        <img src="assets\Map.png" alt="map">
+        </li>
+        <li class="bookingdetails">
+            <p>Reservation Date</p>
+            <input type="text" id="datepicker" placeholder='Select the reservation date'>
+            <p>Name</p>
+            <input type="text" name="Name" id="name" placeholder="Name">
+            <p>Phone</p>
+            <input type="text" name="Phone" id="phone" placeholder="+886 886 886 886">
+            <p>Email</p>
+            <input type="email" name="Email" id="email" placeholder="service@hex.com">
+            <p>People</p>
+            <input type="number" name="People" id="people" placeholder="How many people">
+            <p>Food Inquery</p>
+            <div>
+                <select>
+                    <option value="None">None</option>
+                    <option value="Vegan">Vegan</option>
+                    <option value="nbeef">No beef</option>
+                    <option value="npork">No pork</option>
+                    <option value="others">Others</option>
+                </select>
+
+                <button class="btn cancel">Cancel</button>
+                <button class="btn confirm">Submit</button>
+            </div>
+        </li>     
+    </ul>
+    </div>
+    <div class="clearfix"></div>
+    <!-- End booking -->
+    <!-- footer -->
+    <footer class="contactus">
+        <div class="about">
+            <h1>About Hex Restaurant</h1>
+            <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+        </div>
+        <div class="contactinfo">
+            <h1>Contact info</h1>
+            <ul>
+                <li>Av. Pérez Galdós nº 19 Castellon, 12002</li>
+                <li>+886 886 886</li>
+                <li>service@hexrestaurant</li>
+            </ul>
+        </div>
+        <div>
+            <img src="assets\logo_l.png" alt="logo" class="footerlogo">
+            <div class="clearfix"></div>
+            <ul class="socialnetwork">
+                <li>
+                    <a href="#"><img src="assets\Facebook_icon.png" alt="facebook"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets\Instagram_icon.png" alt="instagram"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="assets\twitter_icon.png" alt=""></a>
+                </li>
+            </ul>          
+        </div>
+    </footer>
+    <div class="clearfix"></div>
+    <!-- End footer -->
+    </div>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

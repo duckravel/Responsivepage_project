@@ -1,0 +1,490 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+li{
+    list-style: none;}
+body{
+    font-family: Helvetica, sans-serif,Arial,Microsoft JhengHei;}
+.wrapper{
+    max-width:1024px;
+    margin:0 auto;
+    background-color: #EFE9E7;
+}
+.banner{
+    height: 420px;
+    width: auto;
+    background-image: url(assets/header_desktop.png);
+    
+}
+.navbar{
+    background: rgba(0,0,0,0.75);
+    height: 56px;
+    position: fixed;
+    width: 1024px;
+    z-index: 800;
+
+}
+.logo{
+    position: relative;
+    left:12px;
+    margin-right: 640px;
+}
+.menu ul li{
+    position: relative;
+    top:16px;
+    float: right;
+    list-style: none;        
+    color:white;
+    margin-left:15px ;  
+    margin-right:15px;  
+}
+.menu li a {
+    color: white;
+    padding: 5px;
+}
+.menu li a:hover{
+    color:rgb(236, 170, 46);
+}
+.bannerword {
+    position: relative;
+    left:295px;
+    top:123px;
+    width: 460px;
+    padding: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(0,0,0,0.35);
+    box-sizing: border-box;
+    
+}
+.title{
+    font-size: 36px;
+}
+.subtile{
+    font-size: 16px;
+}
+.features{
+    position: relative;
+    left:62px;
+    display: block;
+    color: #3D1101;
+    margin-top:50px;
+    text-align: center;
+}
+.features p{
+    font-size: 20px;
+    line-height: 32px;
+}
+.features h2{
+    font-size: 18px;
+    margin-top: 20px;
+}
+.features li{
+    float: left;
+    width: 260px;
+    margin: 30px;
+}
+.features li p{
+    text-align: left;
+    margin-top: 11px;
+    font-size: 16px;
+}
+.features img{
+    border-radius: 50%;
+}
+.clearfix{
+	clear:both;
+	margin-bottom: 2px;
+}
+.chef{
+    background: #3D1101;    
+    height: 460px;
+}
+.chef img{
+    margin-left: 42px;
+}
+.chef li{
+    float:left;
+    
+}
+.chef_info{
+    margin-left: 25px;
+    margin-top: 81px;
+    font-size: 20px;
+    color: #EFE9E7;
+}
+.chef_info p{
+    margin-top: 16px;
+    width: 410px;
+    font-size: 14px;
+}
+.testimonial{
+color: #3D1101;
+margin-top: 50px;
+}
+.testimonial h1{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.testimonial ul{
+    margin-left:42px;    
+    margin-bottom: 50px;
+}
+.testimonial li{
+    float:left;
+    width: 290px;
+    margin-right: 20px;
+    display: flex;
+}
+.customerpic img{
+    border-radius: 50%;
+    margin-right: 13px;
+}
+.customer{
+    margin-bottom: 22px;
+    font-size: 18px;
+}
+.feedback{
+    font-size: 16px;
+}
+.jobtitle
+{
+    color: rgba(61,17,0,0.75);
+    text-align: right;
+}
+.jobtitle::before{
+    content:'--';
+}
+.booking{
+    color: #3D1101;
+    width: 1024px;
+    background: rgba(250,250,250,0.70);
+    display: inline-block;
+}
+
+.booking h1{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 33px;
+    margin-top: 50px;
+}
+.booking li{
+    float:left;
+    margin-bottom: 20px;
+}
+.map{
+    margin-left: 42px;
+}
+.bookingdetails{
+    margin-left: 22px;
+}
+.bookingdetails p{
+    font-size: 16px;
+    color: #3D1101;
+    margin-bottom: 6px;
+}
+.bookingdetails input{
+    width:460px;
+    height: 32px;
+    margin-bottom: 12px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.bookingdetails input::placeholder{
+    padding-left: 1%;
+    font-size: 14px;
+}
+.booking select{
+    height: 32px;
+    width: 50%;
+}
+.contactus{
+    display: flex;
+    color: #3D1101;
+    background-color: #EFE9E7;
+    margin-left: 42px;
+}
+.contactus div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 21px;
+    width: 33%;
+}
+.contactus h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.btn{
+    color: white;
+    width: 20%;
+    height: 32px;
+    margin: 2%;
+    border-radius: 3px;
+    border-width: 0px;
+}
+.btn2{    
+    width: 45%;
+    font-weight: bold;
+}
+.btn3{
+    width: 45%;
+    position: absolute;
+    right: -15%;
+    bottom: -5%;
+}
+.btn4{
+    width: 200px;
+    height: 28px;
+    margin-top:16px;
+    border-radius: 3px;
+    border-width: 1.5px;
+    border-color: #FF5E45;
+    color: #FF5E45;
+    background: none;
+    font-family: Microsoft JhengHei;
+}
+.btn5{
+    height: 34px;
+    width: 32px;
+    background-color: #3D1101;
+    border-width: 0px;
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+    margin-left: -5px;}
+.cancel{
+    background: rgba(0,0,0,0.35);
+}
+.cancel:hover{
+    background: rgba(0,0,0,0.6);
+}
+.confirm{
+    background-color: #F56C23;
+}
+.confirm:hover{
+    background-color:rgb(207, 90, 27);
+}
+.footerlogo{
+    float:right;
+}
+.about p{
+    font-size: 14px;
+}
+.socialnetwork li{
+    float:right;
+    margin-right: 11px;
+}
+.contactinfo li{
+    font-size: 14px;
+}
+.socialnetwork li img{
+    width: 36px;
+    height: 36px;
+}
+.login_title{
+margin-top: 50px;
+font-size: 48px;
+padding: 5px;
+font-weight: bold;
+color: #3D1101;
+text-align: center;
+}
+#login_slogan{
+    font-size: 18px;
+}
+.logandregister{
+    font-family: Microsoft JhengHei;
+    border-top: 3px solid #FF5E45;
+    margin-bottom: 30px;
+    margin-top: 35px;
+    padding:15px;
+    word-spacing: 2px;
+    box-shadow:1px 1px 1px 1px rgb(206, 205, 205) ; 
+}
+
+.login_info{    
+    width: 300px;   
+    margin-left: 35%;
+}
+.register_info{
+    width: 620px;
+    margin-left: 20%;
+}
+.login_info p{
+    margin-top: 15px;
+}
+.remind{
+    margin-top: 0px;
+    font-size: 14px;
+    color: #FF5E45;
+    margin-bottom: 10%;
+    }
+.login_info_title{
+    text-align: center;
+    font-size: 18px;
+    color: #3D1101;
+    font-weight: 900;
+}
+.login_info .info{
+    font-size: 16px;
+    color: #3D1101;
+}
+
+.registerlist li{
+    width: 45%;
+    float: left;
+    margin: 1%;
+    position: relative;
+}
+input {
+    height:32px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 1%;
+}
+.login_info input{
+    width:90%;
+}
+.register_info input{
+    width:115%;
+}
+input::placeholder{
+    margin-left: 2%;
+    font-size: 14px; 
+    background-position: left;
+    background-repeat: no-repeat;
+}
+#email::placeholder{
+    background-image:url('assets/outline_email_black_18dp.png');
+}
+#Pwd::placeholder{
+    background-image:url('assets/baseline_lock_black_18dp.png');
+}
+#Pwd2::placeholder{
+    background-image:url('assets/baseline_lock_black_18dp.png');
+}
+.shop{
+    width: 100%;
+    margin-top: 48px;
+}
+.shp_list{
+    width: 18%;
+    margin-left: 24px;
+    float: left;
+}
+.shp_list h1{
+    font-size:20px;
+    margin-bottom: 16px;
+}
+.shp_list ul li a{
+    display: block;
+    color: #3D1101;
+    padding: 2px;
+    width: 185px;
+    height: 22px;
+}
+.shp_list ul li a:hover{
+    color: white;
+}
+.shp_list ul li{
+    border-bottom: 0.5px solid #3D1101;
+}
+.shp_list ul li:hover{
+    background-color: #3D1101;
+}
+.shpitem{
+    width: 76%;
+    margin-left:20px;
+    float: left;
+    height: auto;   
+}
+.shp_serach ul li{
+    float: left;
+    margin-left: 1%; 
+}
+.shp_serach ul li a {
+    color: #3D1101;
+    line-height: 32px;
+    margin-left:120px;
+    margin-top: 10px;
+}
+.shp_serach input{
+    width: 460px;
+    height: 32px;
+    border-color: #3D1101;
+}
+.item{
+    margin-top: 26px;
+}
+.listcontent{
+    width: 220px;
+    height: 280px;
+    margin-top: 30px;
+    box-shadow:1px 1px 1px 1px rgba(0,0,0,0.25);
+}
+.listpic{
+    position: relative;
+
+}
+.listpic p {
+    position: absolute;
+    top:2px;
+    left: 2px;
+    color: white;
+    font-weight: bold;
+}
+.mainpic{
+    max-width: 100%;
+    height: 120px;
+}
+.list_text{
+    text-align: center;
+    font-size: 20px;
+    color: #3D1101;
+    margin: 2%;
+}
+.list_text p{
+    font-size:12px;
+}
+.list_text h3{
+    margin-top: 20px; 
+    font-style: italic;
+}
+hr{
+    display: block;
+    width: 90px;    
+    border-width: 0.5px;
+    border-style: inset;
+    border-color: #3D1101;
+
+}
+.item ul li{
+    margin-left: 1%;
+    margin-right: 20px;
+    float: left;   
+}
