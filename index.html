@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
@@ -20,19 +20,21 @@
         <div class="banner">
             <div class="navbar">   
                 <div class="menu">
+                    <a href="" class="showmenu">Menu</a>                 
                     <ul> 
                         <li><a href="/shop.html">Shop</a></li>
                         <li><a href="/Login.html">Login</a></li>
                         <li><a href="#map_a">Map</a></li>
                         <li><a href="#chef_a">Chef</a></li>
                         <li><a href="#intro">Intro</a></li>
-                        <li><img class='logo' src="assets\logo_w@svg.svg" alt=""></li>
                     </ul>
                 </div>
+                <img class='logo' src="assets\logo_w@svg.svg" alt="">
             </div>
+            <div class="clearfix"></div>
             <div class="bannerword">
                 <p class='title'>咬一口就無法忘懷的漢堡</p>
-                <p class="subtile">七夕絕對無法錯過的好滋味<br>六角大漢堡</p>
+                <p class="subtile">七夕絕對無法錯過的好滋味<br><i class="fas fa-utensils"></i>六角大漢堡<i class="fas fa-utensils"></i></p>
             </div>
         </div>    
     <!-- End banner -->
@@ -63,7 +65,6 @@
     <!-- End features -->
     <!-- chef -->
     <div class="chef">
-    <p id='chef_a'></p>
         <ul>
         <li>
             <img src="assets\main_chef_brown.png" alt="chef">
@@ -124,24 +125,23 @@
     <!-- booking -->
     
     <div class="booking">
-    <p id='map_a'></p>
     <h1>Make a reservation to prevent long wait</h1>   
     <ul class="bookinginfo">
-        <li class='map'>
-        <img src="assets\Map.png" alt="map">
+        <li class='bookingdetails'>
+            <img src="assets\Map.png" alt="map">
         </li>
         <li class="bookingdetails">
-            <p>Reservation Date</p>
+            <span>Reservation Date</span>
             <input type="text" id="datepicker" placeholder='Select the reservation date'>
-            <p>Name</p>
+            <span>Name</span>
             <input type="text" name="Name" id="name" placeholder="Name">
-            <p>Phone</p>
+            <span>Phone</span>
             <input type="text" name="Phone" id="phone" placeholder="+886 886 886 886">
-            <p>Email</p>
+            <span>Email</span>
             <input type="email" name="Email" id="email" placeholder="service@hex.com">
-            <p>People</p>
+            <span>People</span>
             <input type="number" name="People" id="people" placeholder="How many people">
-            <p>Food Inquery</p>
+            <span>Food Inquery</span>
             <div>
                 <select>
                     <option value="None">None</option>
@@ -150,7 +150,6 @@
                     <option value="npork">No pork</option>
                     <option value="others">Others</option>
                 </select>
-
                 <button class="btn cancel">Cancel</button>
                 <button class="btn confirm">Submit</button>
             </div>
@@ -175,7 +174,7 @@
         </div>
         <div>
             <img src="assets\logo_l.png" alt="logo" class="footerlogo">
-            <div class="clearfix"></div>
+            <div class="clearfix"></div>    
             <ul class="socialnetwork">
                 <li>
                     <a href="#"><img src="assets\Facebook_icon.png" alt="facebook"></a>
