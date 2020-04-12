@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
@@ -18,18 +17,19 @@
     <!-- End Navbar -->
     <!-- banner -->
         <div class="banner">
-            <div class="navbar">   
-                <div class="menu">
-                    <a href="" class="showmenu">Menu</a>                 
+            <div class="navbar"> 
+                <img class='logo' src="assets\logo_w@svg.svg" alt="">
+                <a href="" class="showmenu"><i class="fas fa-bars fa-2x"></i></a>
+                <div class="menu">                                    
                     <ul> 
                         <li><a href="/shop.html">Shop</a></li>
                         <li><a href="/Login.html">Login</a></li>
                         <li><a href="#map_a">Map</a></li>
                         <li><a href="#chef_a">Chef</a></li>
                         <li><a href="#intro">Intro</a></li>
-                    </ul>
-                </div>
-                <img class='logo' src="assets\logo_w@svg.svg" alt="">
+                    </ul>                     
+                </div>                
+
             </div>
             <div class="clearfix"></div>
             <div class="bannerword">
@@ -65,6 +65,7 @@
     <!-- End features -->
     <!-- chef -->
     <div class="chef">
+        <p id='chef_a'></p>
         <ul>
         <li>
             <img src="assets\main_chef_brown.png" alt="chef">
@@ -126,6 +127,7 @@
     
     <div class="booking">
     <h1>Make a reservation to prevent long wait</h1>   
+    <p id='map_a'></p>
     <ul class="bookinginfo">
         <li class='bookingdetails'>
             <img src="assets\Map.png" alt="map">

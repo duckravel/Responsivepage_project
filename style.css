@@ -30,9 +30,7 @@ body{
 }
 .banner{
     height: 420px;
-    width: auto;
     background-image: url(assets/header_desktop.png);
-    
 }
 .navbar{
     background: rgba(0,0,0,0.75);
@@ -40,41 +38,93 @@ body{
     position: fixed;
     width: 1024px;
     z-index: 800;
-
-}
-.logo{
-    position: relative;
-    left:12px;
-    margin-right: 640px;
-}
-.menu ul li{
-    position: relative;
-    top:16px;
-    float: right;
-    list-style: none;        
-    color:white;
-    margin-left:15px ;  
-    margin-right:15px;  
-}
-.menu li a {
-    color: white;
-    padding: 5px;
-}
-.menu li a:hover{
-    color:rgb(236, 170, 46);
 }
 .bannerword {
     position: relative;
-    left:295px;
+    left:28%;
     top:123px;
-    width: 460px;
+    display: inline-block;
     padding: 20px;
     text-align: center;
     color: #FFFFFF;
     background: rgba(0,0,0,0.35);
     box-sizing: border-box;
-    
 }
+@media(max-width:480px){
+.banner{
+        background-image: url(assets/header_mobile.png);
+}
+.bannerword{
+    width: 95%;
+    left:2.5%;}
+}
+.logo{
+    margin-top: 15px;
+    margin-left: 5%;
+    float: left;
+}
+.menu ul li{
+    margin-top:18px;    
+    margin-left:15px ;  
+    margin-right:15px;  
+    float: right;
+    list-style: none;        
+    color:white;
+    display: block;
+}
+.menu li a {
+    color: white;
+}
+.menu li a:hover{
+    color:rgb(236, 170, 46);
+}
+.showmenu {display:none; float: right;
+    color: white;}
+
+@media (max-width:768px){
+.navbar{width:100%}
+.menu{
+       /* hide menu */
+       max-height: 0px;    
+       overflow: hidden;
+       
+       transition: max-height 2s;
+       
+       /* absolute position */
+       position: absolute;
+       z-index:100;
+       /* size */
+       border-top: solid 1px white;
+       top:56px;
+       left: 0;
+       right: 0px;
+       background:rgba(0,0,0,0.75) ;
+}
+.menu ul{
+    display: flex;
+    flex-flow: column-reverse;}
+.menu ul li{      
+    border-bottom: dashed 0.5px white ;
+    margin-bottom: 2px;
+    padding: 15px;
+    margin: 0;
+}
+.menu ul li a{
+    margin-bottom: 2%;
+
+}
+
+
+.showmenu{
+       display: block;
+       margin: 1%;
+}
+.menu-show .menu{
+    max-height: 500px;
+}
+}
+
+
 .title{
     font-size: 36px;
 }
@@ -83,7 +133,6 @@ body{
 }
 .features{
     position: relative;
-    left:62px;
     display: block;
     color: #3D1101;
     margin-top:50px;
@@ -92,6 +141,7 @@ body{
 .features p{
     font-size: 20px;
     line-height: 32px;
+    text-align: center;
 }
 .features h2{
     font-size: 18px;
@@ -99,43 +149,79 @@ body{
 }
 .features li{
     float: left;
-    width: 260px;
-    margin: 30px;
+    width: 32%;
+    margin: 0.5%;
 }
 .features li p{
     text-align: left;
-    margin-top: 11px;
+    width: 80%;
+    margin: 10%;
     font-size: 16px;
 }
 .features img{
     border-radius: 50%;
+}
+@media (max-width:767px){
+    .features li{
+        width: 98%;
+    }
 }
 .clearfix{
 	clear:both;
 	margin-bottom: 2px;
 }
 .chef{
-    background: #3D1101;    
-    height: 460px;
+    background: #3D1101;
+    display: inline-block;
 }
-.chef img{
-    margin-left: 42px;
-}
-.chef li{
+.chef ul li{    
     float:left;
-    
+    width: 48%;     
+}
+
+.chef img{
+    margin-left: 10%;
+    padding: 0px;
+    border: 0px;
 }
 .chef_info{
-    margin-left: 25px;
+    margin-left: 4%;
     margin-top: 81px;
-    font-size: 20px;
     color: #EFE9E7;
+    width: 45%;
+    background-color: #3D1101;
+    box-sizing:content-box;
+}
+.chef_info h2{
+    font-size: 20px;
 }
 .chef_info p{
     margin-top: 16px;
-    width: 410px;
     font-size: 14px;
+    padding: 1%;
+    max-width: 85%;
+    line-height: 24px;
 }
+@media(max-width:1024px){
+    .chef ul li {width: 94%;}
+    .chef img{
+        margin-left: 6%;
+        width: 90%;}
+    .chef_info{
+        margin-top: 10%;
+        margin-left: 6%;
+        width: 94%;
+        margin-bottom: 10%;
+    }
+    .chef_info p{
+        margin-top: 16px;
+        font-size: 14px;
+        padding: 2%;
+        line-height: 24px;
+    }
+
+}
+
 .testimonial{
 color: #3D1101;
 margin-top: 50px;
@@ -176,34 +262,29 @@ margin-top: 50px;
 }
 .booking{
     color: #3D1101;
-    width: 1024px;
     background: rgba(250,250,250,0.70);
     display: inline-block;
+    width: 100%;
 }
-
 .booking h1{
     text-align: center;
     font-size: 24px;
     margin-bottom: 33px;
     margin-top: 50px;
 }
-.booking li{
-    float:left;
-    margin-bottom: 20px;
+.bookinginfo li{
+    float: left;
+    width: 47%;
+    margin: 1%;
 }
-.map{
-    margin-left: 42px;
-}
-.bookingdetails{
-    margin-left: 22px;
-}
-.bookingdetails p{
+.bookingdetails span{
     font-size: 16px;
     color: #3D1101;
     margin-bottom: 6px;
+    display: block;
 }
 .bookingdetails input{
-    width:460px;
+    width:45%;
     height: 32px;
     margin-bottom: 12px;
     background: #FFFFFF;
@@ -213,29 +294,27 @@ margin-top: 50px;
     font-size: 14px;
 }
 .bookingdetails input::placeholder{
-    padding-left: 1%;
+    padding:2%;
     font-size: 14px;
+}
+
+input {
+    height:32px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 1%;
+}
+.bookingdetails input{
+    width:98%;
 }
 .booking select{
     height: 32px;
     width: 50%;
 }
-.contactus{
-    display: flex;
-    color: #3D1101;
-    background-color: #EFE9E7;
-    margin-left: 42px;
-}
-.contactus div{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 21px;
-    width: 33%;
-}
-.contactus h1{
-    font-size: 24px;
-    margin-bottom: 16px;
-}
+
 .btn{
     color: white;
     width: 20%;
@@ -250,9 +329,7 @@ margin-top: 50px;
 }
 .btn3{
     width: 45%;
-    position: absolute;
-    right: -15%;
-    bottom: -5%;
+    float:right;
 }
 .btn4{
     width: 200px;
@@ -286,8 +363,48 @@ margin-top: 50px;
 .confirm:hover{
     background-color:rgb(207, 90, 27);
 }
+@media(max-width:1024px){
+    .bookinginfo li{
+        float: left;
+        width: 95%;
+        margin: 1%;
+    }
+    .booking select{
+        width: 90%;
+    }
+    .bookingdetails{
+        padding-left: 4%;
+    }
+    .bookingdetails img{
+        width: 90%;
+    }
+    .bookingdetails input{
+        width: 90%;
+    }
+    .btn{
+        margin:2.5%;
+        width: 40%;
+    }
+}
+.contactus{
+    display: flex;
+    color: #3D1101;
+    background-color: #EFE9E7;
+    margin-left: 4%;
+}
+.contactus div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 21px;
+    width: 33%;
+}
+.contactus h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
 .footerlogo{
     float:right;
+    margin-bottom:8%;
 }
 .about p{
     font-size: 14px;
@@ -295,6 +412,7 @@ margin-top: 50px;
 .socialnetwork li{
     float:right;
     margin-right: 11px;
+
 }
 .contactinfo li{
     font-size: 14px;
@@ -302,6 +420,12 @@ margin-top: 50px;
 .socialnetwork li img{
     width: 36px;
     height: 36px;
+}
+@media(max-width:767px){   
+    .contactus{
+        display: block;
+        margin-left: 5%;}
+    .contactus div{width: 98%;}
 }
 .login_title{
 margin-top: 50px;
@@ -323,10 +447,17 @@ text-align: center;
     word-spacing: 2px;
     box-shadow:1px 1px 1px 1px rgb(206, 205, 205) ; 
 }
-
 .login_info{    
     width: 300px;   
     margin-left: 35%;
+}
+@media (max-width:768px){
+    .login_info{
+    margin-left: 30%;}
+}
+@media(max-width:480px){
+    .login_info{
+    margin-left: 10%;}
 }
 .register_info{
     width: 620px;
@@ -339,7 +470,6 @@ text-align: center;
     margin-top: 0px;
     font-size: 14px;
     color: #FF5E45;
-    margin-bottom: 10%;
     }
 .login_info_title{
     text-align: center;
@@ -358,15 +488,6 @@ text-align: center;
     margin: 1%;
     position: relative;
 }
-input {
-    height:32px;
-    background: #FFFFFF;
-    border: 1px solid #CCCCCC;
-    box-shadow: inset 0px 1px 0px 0px #ECECEC;
-    border-radius: 3px;
-    font-size: 14px;
-    margin-top: 1%;
-}
 .login_info input{
     width:90%;
 }
@@ -379,6 +500,33 @@ input::placeholder{
     background-position: left;
     background-repeat: no-repeat;
 }
+
+@media (max-width:768px){
+    .registerlist{display: flex;
+    flex-flow: column-reverse;}
+    
+    .registerlist li {
+        width: 98%;
+    }
+    .register_info input{
+        width:90%;
+    }
+    .register_info{
+        width: 90%;
+        margin: 3%;
+    }
+    .btn3{
+        width: 90%;
+        float: left;
+    }
+}
+@media (max-width:480px){
+    .register_info{
+        width: 85%;
+        margin: 3%;
+    }
+}
+
 #email::placeholder{
     background-image:url('assets/outline_email_black_18dp.png');
 }
@@ -407,6 +555,7 @@ input::placeholder{
     padding: 2px;
     width: 185px;
     height: 22px;
+    
 }
 .shp_list ul li a:hover{
     color: white;
@@ -432,6 +581,8 @@ input::placeholder{
     line-height: 32px;
     margin-left:120px;
     margin-top: 10px;
+    position: absolute;
+    right: 10%;
 }
 .shp_serach input{
     width: 460px;
@@ -484,7 +635,35 @@ hr{
 
 }
 .item ul li{
-    margin-left: 1%;
-    margin-right: 20px;
+    margin-left: 2%;
     float: left;   
+}
+
+@media (max-width:768px){
+    .shp_list{
+        width: 90%;
+        margin-left: 24px;
+        float: left;
+    }
+    .shp_serach input{
+        width: 90%;
+    }
+    .shpitem{
+        width:96%;
+        margin:2% ;
+    }
+    .shp_serach ul li {
+        width: 90%;
+        float: right;
+        margin:2%;
+    }
+    .shp_serach ul li input{
+        width: 90%;
+    }
+}
+@media (max-width:480px){
+    .item ul li{margin-left:10%;}
+    .listcontent{
+        width: 100%;        
+    }
 }
