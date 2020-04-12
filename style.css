@@ -646,7 +646,7 @@ hr{
         float: left;
     }
     .shp_serach input{
-        width: 90%;
+        width: 80%;
     }
     .shpitem{
         width:96%;
@@ -656,9 +656,6 @@ hr{
         width: 90%;
         float: right;
         margin:2%;
-    }
-    .shp_serach ul li input{
-        width: 90%;
     }
 }
 @media (max-width:480px){
