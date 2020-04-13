@@ -240,6 +240,7 @@ margin-top: 50px;
     width: 290px;
     margin-right: 20px;
     display: flex;
+    margin-bottom: 2%;
 }
 .customerpic img{
     border-radius: 50%;
@@ -481,7 +482,6 @@ text-align: center;
     font-size: 16px;
     color: #3D1101;
 }
-
 .registerlist li{
     width: 45%;
     float: left;
@@ -526,15 +526,9 @@ input::placeholder{
         margin: 3%;
     }
 }
-
-#email::placeholder{
-    background-image:url('assets/outline_email_black_18dp.png');
-}
-#Pwd::placeholder{
-    background-image:url('assets/baseline_lock_black_18dp.png');
-}
-#Pwd2::placeholder{
-    background-image:url('assets/baseline_lock_black_18dp.png');
+#email::placeholder,#Pwd::placeholder,#Pwd2::placeholder,#phone::placeholder{
+    font-family: "Font Awesome 5 Free",Arial, Helvetica, sans-serif;
+    margin-left:2%;
 }
 .shop{
     width: 100%;
@@ -582,7 +576,7 @@ input::placeholder{
     margin-left:120px;
     margin-top: 10px;
     position: absolute;
-    right: 10%;
+    right: 20%;
 }
 .shp_serach input{
     width: 460px;
@@ -646,7 +640,7 @@ hr{
         float: left;
     }
     .shp_serach input{
-        width: 80%;
+        width: 85%;
     }
     .shpitem{
         width:96%;
@@ -656,6 +650,9 @@ hr{
         width: 90%;
         float: right;
         margin:2%;
+    }
+    .shp_serach ul li a{
+        right:5%;
     }
 }
 @media (max-width:480px){
