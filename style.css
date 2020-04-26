@@ -323,16 +323,17 @@ input {
     margin: 2%;
     border-radius: 3px;
     border-width: 0px;
+    cursor:pointer;
 }
-.btn2{    
+.btn-log{    
     width: 45%;
     font-weight: bold;
 }
-.btn3{
+.btn-reg{
     width: 45%;
     float:right;
 }
-.btn4{
+.btn-shop{
     width: 200px;
     height: 28px;
     margin-top:16px;
